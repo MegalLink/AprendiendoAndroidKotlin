@@ -1,5 +1,6 @@
 package com.example.aprendiendoandroidkotlin
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Button
@@ -17,9 +18,18 @@ class CiudadesActivity : AppCompatActivity() {
 
         btn_quito.setOnClickListener {
             Toast.makeText(this,"Ciudad Quito",Toast.LENGTH_LONG).show()
+            //crear intent
+            val intent= Intent(this,DetalleClimaActivity::class.java)
+            //enviar informacion al intent
+            intent.putExtra("ciudades_activity_ciudad","Quito")
+            //iniciar intent
+            startActivity(intent)
         }
         btn_tulcan.setOnClickListener {
             Toast.makeText(this,"Ciudad Tulcan",Toast.LENGTH_LONG).show()
+            val intent= Intent(this,DetalleClimaActivity::class.java)
+            intent.putExtra("ciudades_activity_ciudad","Tulcan")
+            startActivity(intent)
         }
     }
 
