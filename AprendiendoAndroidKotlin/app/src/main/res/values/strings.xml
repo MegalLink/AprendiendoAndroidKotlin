@@ -1,3 +1,9 @@
 <resources>
-    <string name="app_name">AprendiendoAndroidKotlin</string>
+    <string name="app_name">App Clima</string>
+    <string name="temperatura"> 20°</string>
+    <string name="ciudad"> Quito</string>
+    <string name="clima"> Nublado</string>
+    <string name="titulo_ciudades"> Bienvenidos a mi aplicación del clima. Porfavor escoja una opción</string>
+    <string name="btn_quito"> Quito</string>
+    <string name="btn_tulcan"> Tulcán</string>
 </resources>
