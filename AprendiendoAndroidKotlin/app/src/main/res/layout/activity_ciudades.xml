@@ -34,10 +34,16 @@
         android:textColor="#FF5722" />
 
     <Button
-        android:id="@+id/btn_validar_red"
+        android:id="@+id/btn_get_volley"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET VOLLEY" />
+
+    <Button
+        android:id="@+id/btn_get_fuel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Button"
-        tools:text="Validar Red" />
+        tools:text="GET FUEL" />
 </LinearLayout>
 
