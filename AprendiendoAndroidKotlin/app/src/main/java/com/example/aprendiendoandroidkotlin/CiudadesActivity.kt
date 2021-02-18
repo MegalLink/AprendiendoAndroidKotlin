@@ -15,7 +15,7 @@ class CiudadesActivity : AppCompatActivity() {
         //Intent implicito = No se sabe que componente se va a llamar por ejemplo para compartir algo se abre facebook , whatsapp etc+
         val btn_quito=findViewById<Button>(R.id.btn_quito)
         val btn_tulcan=findViewById<Button>(R.id.btn_tulcan)
-
+        val btn_validar_red=findViewById<Button>(R.id.btn_validar_red)
         btn_quito.setOnClickListener {
             Toast.makeText(this,"Ciudad Quito",Toast.LENGTH_LONG).show()
             //crear intent
@@ -31,6 +31,14 @@ class CiudadesActivity : AppCompatActivity() {
             intent.putExtra("ciudades_activity_ciudad","Tulcan")
             startActivity(intent)
         }
+        btn_validar_red.setOnClickListener {
+            if(Network.hayRed(this)){
+                Toast.makeText(this,"Si hay red",Toast.LENGTH_LONG).show()
+            }else{
+                Toast.makeText(this,"No hay conexión a internet",Toast.LENGTH_LONG).show()
+            }
+        }
+
     }
 
     fun irIntent(){
